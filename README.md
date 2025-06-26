@@ -1,5 +1,7 @@
 # CSDN_blog_to_pdf
 
+本教程目的是为了将CSDN的文章转换成pdf格式的文件。原作者是DAIDING，侵删。  
+
 ## 第一步：  
 打开想要导出的页面，空白处点击鼠标右键⇒点击“检查”或“check”，或直接在页面按F12键。  
 
@@ -7,10 +9,11 @@
 复制以下代码粘贴到控制台，并按回车。  
 
 若提示让输入“允许粘贴”或“allow pasting”，按提示输入后点回车键就行，输入完后再次粘贴该代码。  
-
+```
 allow pasting  
+```
 
-
+```
 (function doPrint(){      
 	'use strict';
 	var articleBox = $("div.article_content");
@@ -26,6 +29,7 @@ allow pasting
 	window.print();
 	document.body.innerHTML = older;
 	return false;
-})();  
+})();
+```
 ## 第三步：  
 输入代码并按回车键后，会弹出如下提示框，点击“保存”就行。  
